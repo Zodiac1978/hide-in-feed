@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Hide in Feed
- * Plugin URI: https://github.com/zodiac1978/hide-in-feed/
+ * Plugin Name: Hide from Feed
+ * Plugin URI: https://github.com/zodiac1978/hide-from-feed/
  * Description: Adds a "Hide in Feed" option to all blocks, allowing you to exclude specific blocks from RSS feeds.
  * Version: 1.0.0
  * Requires at least: 5.0
@@ -9,7 +9,7 @@
  * Author URI: https://torstenlandsiedel.de/
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: hide-in-feed
+ * Text Domain: hide-from-feed
  */
 
 // Exit if accessed directly
@@ -34,7 +34,7 @@ class Hide_In_Feed {
      */
     public function enqueue_editor_assets() {
         wp_enqueue_script(
-            'hide-in-feed-editor',
+            'hide-from-feed-editor',
             plugins_url('js/editor.js', __FILE__),
             array('wp-blocks', 'wp-dom-ready', 'wp-edit-post', 'wp-element', 'wp-i18n', 'wp-components'),
             filemtime(plugin_dir_path(__FILE__) . 'js/editor.js'),
@@ -42,7 +42,7 @@ class Hide_In_Feed {
         );
 
         // Add translations
-        wp_set_script_translations('hide-in-feed-editor', 'hide-in-feed');
+        wp_set_script_translations('hide-from-feed-editor', 'hide-from-feed');
     }
 
     /**

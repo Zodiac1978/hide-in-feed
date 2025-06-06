@@ -1,4 +1,4 @@
-=== Hide in Feed ===
+=== Hide from Feed ===
 Contributors: zodiac1978
 Donate link: https://www.paypal.com/paypalme/zodiac1978
 Tags: feed, RSS, Hide
@@ -9,7 +9,7 @@ Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Adds a "Hide in Feed" option to all blocks, allowing you to exclude specific blocks from RSS feeds.
+Adds a "Hide from Feed" option to all blocks, allowing you to exclude specific blocks from RSS feeds.
 
 == Description ==
 
@@ -24,7 +24,7 @@ The block is still fully rendered on the website — it’s only excluded from t
 
 == Installation ==
 
-1. Upload the plugin folder to `/wp-content/plugins/hide-in-feed` or install via the WordPress Plugin Directory.
+1. Upload the plugin folder to `/wp-content/plugins/hide-from-feed` or install via the WordPress Plugin Directory.
 2. Activate the plugin through the **Plugins** menu.
 3. Edit a post and select a block.
 4. In the block sidebar, find the **"Hide in feed"** panel and toggle the switch.
@@ -36,7 +36,7 @@ The block is still fully rendered on the website — it’s only excluded from t
 
 Yes! Contributions are welcome on GitHub. You can submit issues, suggest improvements, or open pull requests at:
 
-👉 [https://github.com/zodiac1978/hide-in-feed](https://github.com/zodiac1978/hide-in-feed)
+👉 [https://github.com/zodiac1978/hide-from-feed](https://github.com/zodiac1978/hide-from-feed)
 
 = Will this affect my website content? =
 
@@ -48,7 +48,7 @@ Each block’s state is tracked by a unique internal ID (`clientId`), which can 
 
 == Screenshots ==
 
-1. The “Hide in feed” toggle panel in the block editor.
+1. The “Hide from feed” toggle panel in the block editor.
 
 == Changelog ==
 
