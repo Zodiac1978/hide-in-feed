@@ -1,6 +1,6 @@
 /**
  * JavaScript for the block editor
- * Adds "Hide in Feed" inspector control to all blocks
+ * Adds "Hide from Feed" inspector control to all blocks
  */
 (function(wp) {
     const { __ } = wp.i18n;
@@ -56,19 +56,19 @@
                     wp.element.createElement(
                         PanelBody,
                         {
-                            title: __('Hide in Feed', 'hide-in-feed'),
+                            title: __('Hide from Feed', 'hide-from-feed'),
                             initialOpen: false,
-                            className: 'hide-in-feed-panel'
+                            className: 'hide-from-feed-panel'
                         },
                         wp.element.createElement(
                             ToggleControl,
                             {
-                                label: __('Do not show this block in RSS feed', 'hide-in-feed'),
+                                label: __('Do not show this block in RSS feed', 'hide-from-feed'),
                                 checked: !!attributes.hideInFeed,
                                 onChange: (value) => setAttributes({ hideInFeed: value }),
                                 help: attributes.hideInFeed
-                                    ? __('This block will be hidden in RSS feeds.', 'hide-in-feed')
-                                    : __('This block will be shown in RSS feeds.', 'hide-in-feed')
+                                    ? __('This block will be hidden in RSS feeds.', 'hide-from-feed')
+                                    : __('This block will be shown in RSS feeds.', 'hide-from-feed')
                             }
                         )
                     )
@@ -80,13 +80,13 @@
     // Add filters
     addFilter(
         'blocks.registerBlockType',
-        'hide-in-feed/add-attribute',
+        'hide-from-feed/add-attribute',
         addHideInFeedAttribute
     );
 
     addFilter(
         'editor.BlockEdit',
-        'hide-in-feed/add-control',
+        'hide-from-feed/add-control',
         withHideInFeedControl
     );
 })(window.wp);
